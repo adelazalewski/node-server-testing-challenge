@@ -2,11 +2,11 @@ const express = require("express")
 const server = express()
 const todoRouter = require("./todos/todos-router")
 
-server.use(express)
+server.use(express.json())
 server.use(todoRouter)
 
 server.use("/", (req, res) => {
-    res.json({
+    res.status(200).json({
         message: "Welcome to the tested todo API lol! Adela here! :)"
     })
 })

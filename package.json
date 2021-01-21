@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node Server Testing Challenge",
   "scripts": {
-    "test": "cross-env NODE_ENV=testing jest --no-watchman",
+    "test": "cross-env NODE_ENV=developing jest --no-watchman",
     "server": "cross-env NODE_ENV=developing nodemon index.js",
     "start": "node index.js"
   },
